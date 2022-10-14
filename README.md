@@ -1,2 +1,7 @@
 # kokoa_clone
-kokoa clone
+
+read me
+write me
+save me
+load me
+
