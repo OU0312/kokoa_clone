@@ -5,27 +5,23 @@
     <title>Home - My First Website!</title>
     <meta charset="utf-8" />
     <meta name="description" content="this is my website" />
+
     <style>
+      :root {
+        --main-color: rgb(117, 163, 253);
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 1000vh;
         margin: 50px;
-        background-color: pink;
       }
-      form {
-        padding: 10px;
-        border: 1px solid purple;
-        display: flex;
-        flex-direction: column;
-        background-color: tomato;
-        font-size: 100px;
-      }
-      form:hover input:focus {
-        background-color: seagreen;
+      p {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
-    
     <form>
       <input type="text" name="" id="" />
       <input type="text" name="" id="" />
