@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/nmm.PNG" />
+    <title>Home - My First Website!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="this is my website" />
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        flex-direction: column;
+      }
+      div {
+        background-color: purple;
+        width: 200px;
+        height: 200px;
+      }
+      span {
+        font-size: 55px;
+      }
+      @media screen and (orientation: landscape) {
+        div {
+          background-color: tomato;
+        }
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>폰 돌려</span>
+  </body>
+</html>
