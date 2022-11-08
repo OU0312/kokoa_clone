@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chat - Kokoa Clone</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>no service </span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>98%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">OU</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"> </i></span>
+        <span class="bars"><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, November 22, 2002</div>
+
+      <div class="message-row message-row--first">
+        <img src="imgs/OU.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">OU</span>
+          <div class="message__info">
+            <span class="message__bubble">I'm OU</span>
+            <span class="message__time"></span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--second">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">hi idiot</span>
+            <span class="message__time">18:42</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">hi uglyman</span>
+            <span class="message__time">18:42</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placholder="Write a message..." />
+        <i class="fa-solid fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>your screen is too big</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/20dd92714d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
