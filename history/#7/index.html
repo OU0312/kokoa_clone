@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .big {
+        background-color: white;
+        width: 400px;
+        height: 700px;
+      }
+      header {
+        width: 100%;
+        display: flex;
+      }
+      header .fa-solid {
+        width: 33%;
+        margin-top: 25px;
+        margin-left: 25px;
+      }
+      header .center {
+        display: flex;
+        justify-content: center;
+      }
+      header .last {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="big">
+      <header>
+        <i class="fa-solid fa-x"></i>
+        <span class="center">PlayList</span>
+        <span class="last"></span>
+      </header>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/20dd92714d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
