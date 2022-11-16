@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .bg {
+        background-color: #6bbcbe;
+        width: 750px;
+        height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .circles {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: run 1s ease-in-out infinite;
+      }
+      .circle {
+        background-color: white;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0px 20px;
+      }
+      .squares {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hello {
+        background-color: white;
+        width: 10px;
+        height: 50px;
+        margin: 0px 5px;
+        animation: big 1.5s ease-in-out infinite;
+      }
+      .hello:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .hello:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .hello:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+      .hello:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+      @keyframes run {
+        0% {
+          transform: rotate(0turn);
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+
+      @keyframes big {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: scaleY(2);
+        }
+        75% {
+          transform: none;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="circles">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <div class="squares">
+        <div class="hello"></div>
+        <div class="hello two"></div>
+        <div class="hello three"></div>
+        <div class="hello four"></div>
+        <div class="hello"></div>
+      </div>
+    </div>
+  </body>
+</html>

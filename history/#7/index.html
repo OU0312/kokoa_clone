@@ -14,46 +14,182 @@
     />
     <link rel="stylesheet" href="style.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap");
       body {
         background-color: teal;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        font-family: "Noto Sans KR", sans-serif;
       }
-      .big {
+      .columns {
         background-color: white;
         width: 400px;
-        height: 700px;
+        height: 850px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
       }
-      header {
+
+      .column {
+        display: flex;
+
+        align-items: center;
+        text-align: center;
         width: 100%;
-        display: flex;
+        margin-bottom: 35px;
+        padding-left: 30px;
       }
-      header .fa-solid {
-        width: 33%;
-        margin-top: 25px;
-        margin-left: 25px;
+      .column > span {
+        font-size: 30px;
+        font-weight: 800;
+        margin-left: 100px;
       }
-      header .center {
+      .column:first-child {
+        margin-top: 75px;
+      }
+      .big {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 189, 17);
+        border-radius: 10px;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        border: 2px solid black;
+      }
+      .big i {
+        font-size: 30px;
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .big__singer {
+        margin-top: 10px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+      .play {
+        width: 150px;
+        height: 50px;
+        border: 3px solid black;
+        border-bottom: 8px solid black;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
         justify-content: center;
       }
-      header .last {
+      .play span {
+        font-size: 25px;
+      }
+      .play i {
+        margin-right: 15px;
+      }
+      .heart {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        border-bottom: 8px solid black;
+        border-radius: 50%;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin-left: 30px;
+      }
+      .box {
+        width: 75px;
+        height: 75px;
+        border-radius: 10px;
+        margin-right: 15px;
+        border: 2px solid black;
+      }
+      .box2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: left;
+      }
+      .song {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .singer {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      .box:first-child {
+        background-color: rgb(248, 90, 42);
+      }
+      .column:nth-child(5) .box {
+        background-color: rgb(255, 137, 187);
+      }
+      .column:nth-child(6) .box {
+        background-color: rgb(24, 71, 229);
+      }
+      .column:nth-child(7) .box {
+        background-color: rgb(0, 198, 173);
       }
     </style>
   </head>
 
   <body>
-    <div class="big">
-      <header>
-        <i class="fa-solid fa-x"></i>
+    <div class="columns">
+      <div class="column">
+        <i class="fa-solid fa-x fa-2x"></i>
         <span class="center">PlayList</span>
         <span class="last"></span>
-      </header>
+      </div>
+      <div class="column">
+        <div class="big">
+          <i class="fa-solid fa-image"></i>
+        </div>
+        <div class="texts">
+          <span>Random</span>
+          <span>Love</span>
+          <span class="big__singer">by Divay kapoor</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="play">
+          <span><i class="fa-solid fa-caret-right"></i>Play</span>
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        <div class="heart"><i class="fa-solid fa-plus"></i></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box2">
+          <span class="song">Matargarsti</span>
+          <span class="singer">Mohit Chauhan</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box2">
+          <span class="song">Attitude</span>
+          <span class="singer">Lewis OfMan • Attitude</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box2">
+          <span class="song">Try Everything</span>
+          <span class="singer">Shakira • Zootopia</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+        <div class="box2">
+          <span class="song">Sunflower</span>
+          <span class="singer">Joseph Vincent • Sunflower</span>
+        </div>
+      </div>
     </div>
     <script
       src="https://kit.fontawesome.com/20dd92714d.js"
