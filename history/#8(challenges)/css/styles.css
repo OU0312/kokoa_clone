@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap");
+
+@import "reset.css";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+}
+
+.container {
+  height: 800px;
+  width: 400px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 100px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__img {
+  margin-bottom: 25px;
+}
+
+.main__img img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.main__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main__title h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.main__title h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+}
+
+.main__buttons {
+  margin-bottom: 50px;
+}
+
+.main__buttons__button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.main__buttons span:first-child {
+  background-color: black;
+  color: white;
+}
+.main__buttons span:last-child {
+  color: gray;
+}
+.main__buttons span:last-child i {
+  color: black;
+  margin-right: 5px;
+}
+
+.main__song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main__song__img {
+  position: relative;
+}
+.main__song__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.main__song__title {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.main__song__title--title {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.main__song__button i {
+  color: gray;
+}
+
+.main__song .playing i {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main__song .playing img {
+  opacity: 0.7;
+}
+
+.main__playing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  width: 280px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.main__playing--title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__playing--title--title {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.main__playing--title--song {
+  color: white;
+  font-size: 20px;
+}
+
+.main__playing--icons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.main__playing--icons i {
+  font-size: 30px;
+}
+
+.main__playing--icons i:nth-child(2) {
+  font-size: 40px;
+  margin: 0px 15px;
+}
+.main__bigimg {
+  margin-bottom: 50px;
+}
+.main__bigimg img {
+  width: 250px;
+  height: 250px;
+
+  margin-top: 50px;
+  border-radius: 50px;
+}
