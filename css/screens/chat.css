@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: rgb(252, 238, 246);
   height: 11000vh;
 }
 #chat-screen .status-bar {
@@ -8,7 +8,7 @@
 
 #chat-screen .alt-header {
   z-index: 1;
-  background-color: #abc1d1;
+  background-color: rgb(252, 238, 246);
   position: sticky;
   top: 0;
   width: 100%;
@@ -97,7 +97,8 @@
 .message-row--own .message__bubble {
   border-top-left-radius: 15px;
   border-top-right-radius: 0px;
-  background-color: var(--yellow);
+  background-color: #9c9b9b;
+  color: white;
   margin-left: 5px;
 }
 
