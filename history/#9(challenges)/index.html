@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <style>
+      .hi form {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hi">
+      <h1>Create An Account</h1>
+      <form>
+        <div>
+          <label for="fn">First Name</label>
+          <input id="fn" type="text" placeholder="First Name" required />
+        </div>
+        <div>
+          <label for="ln">Last Name</label>
+          <input id="ln" type="text" placeholder="Last Name" required />
+        </div>
+        <div>
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" placeholder="E-Mail" required />
+        </div>
+        <div>
+          <label for="username">UserName</label>
+          <input id="username" type="text" placeholder="UserName" required />
+        </div>
+        <div>
+          <label for="pw">PassWord</label>
+          <input
+            id="pw"
+            type="password"
+            placeholder="PassWord"
+            required
+            minlength="10"
+          />
+        </div>
+        <div>
+          <label for="bd">Birth Date</label>
+          <input id="bd" type="date" required />
+        </div>
+        <div>
+          <label for="bd">How happy Are you?</label>
+          <input id="bd" type="range" required />
+        </div>
+        <div>
+          <label for="cp">What is your favorite color?</label>
+          <input id="cp" type="color" required />
+        </div>
+        <button>Create Account</button>
+      </form>
+    </div>
+  </body>
+</html>

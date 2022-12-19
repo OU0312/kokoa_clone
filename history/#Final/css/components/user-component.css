@@ -1,0 +1,101 @@
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+.friends .user-component:first-child:hover {
+  background-color: rgb(255, 202, 222);
+}
+.friends .user-component:nth-child(2):hover {
+  background-color: rgb(156, 155, 155);
+}
+.friends .user-component:nth-child(3):hover {
+  background-color: rgb(255, 231, 131);
+}
+.friends .user-component:nth-child(4):hover {
+  background-color: rgb(188, 236, 255);
+}
+.friends .user-component:nth-child(5):hover {
+  background-color: rgb(188, 232, 231);
+}
+
+.chats a:nth-child(1):hover .user-component {
+  background-color: rgb(156, 155, 155);
+}
+.chats a:nth-child(2):hover .user-component {
+  background-color: rgb(255, 231, 131);
+}
+.chats a:nth-child(3):hover .user-component {
+  background-color: rgb(188, 236, 255);
+}
+.chats a:nth-child(4):hover .user-component {
+  background-color: rgb(188, 232, 231);
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__column:last-child {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+.user-component__column:last-child i {
+  margin-left: 5px;
+}
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-component__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__subtitle i {
+  margin-left: 5px;
+  color: tomato;
+}
+.user-component__title--not--bold {
+  font-weight: 400;
+}
+
+.user-compnent__time {
+  display: block;
+  margin-bottom: 10px;
+}

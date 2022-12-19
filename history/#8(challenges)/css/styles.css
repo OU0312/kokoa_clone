@@ -173,3 +173,59 @@ header {
   margin-top: 50px;
   border-radius: 50px;
 }
+
+.main__status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main__status__time {
+  display: flex;
+  justify-content: space-between;
+}
+.main__status__time span {
+  color: gray;
+}
+
+.main__status__time span:first-child {
+  margin-left: 30px;
+}
+.main__status__time span:last-child {
+  margin-right: 30px;
+}
+
+.main__status__timestamp {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main__status__timestamp input {
+  width: 90%;
+  background-color: black;
+  color: black;
+}
+
+.main__icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+}
+
+.main__icons i:first-child,
+.main__icons i:last-child {
+  color: gray;
+}
+.main__icons i:nth-child(2),
+.main__icons i:nth-child(4) {
+  font-size: 40px;
+}
+
+.main__icons i:nth-child(3) {
+  font-size: 80px;
+}
